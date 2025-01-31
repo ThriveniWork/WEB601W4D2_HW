@@ -1,24 +1,42 @@
-/*-----------Random Codes-----------*/
+document.addEventListener("DOMContentLoaded", function () {
+    var codeDisplay = document.getElementById("codes");
+    var inputField = document.querySelector("input[name='randomcode']");
+    var submitButton = document.querySelector("input[type='submit']");
+    var generatedCode = "";
 
-//Function to generate combination of characters
-function generateCode() {
-    //create variable of characters including numbers, uppercase, lowercase and symbols
-    var code = "";
-    var str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
-    
-    //generate random characters multiple times using a loop
-    for (var i = 0; i < 8; i++) {
-        var char = Math.random() * str.length; //randomly select a character from the variable
-        code += str.charAt(char); //accumulat ethe gnerated character intoa string of 8
+    // Function to generate a random code
+    function generateCode() {
+        var code = "";
+        var str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
+        for (let i = 0; i < 8; i++) {
+            var char = Math.random() * str.length; //randomly select a character from the variable
+            code += str.charAt(char); //accumulate the gnerated character intoa string of 8
+        }
+        return code;
     }
-    return code;
-}
-//Display the generated code
-document.getElementById("codes").innerHTML = generateCode(); //display the generated code on the HTML element
 
-//Disable Button
-function disableButton() {
-    document.getElementById("submit").disabled = true; //disable the button
-}
-//Activate Function
-disableButton(); //call the function to disable the button
+    // Function to check input and enable/disable the submit button
+    function validateInput() {
+        if (inputField.value === generatedCode) {
+            submitButton.disabled = false;
+            submitButton.style.background = "blue";
+        } else {
+            submitButton.disabled = true;
+            submitButton.style.background = "grey";
+        }
+    }
+
+    // Initialize the generated code and display it
+    function initialize() {
+        generatedCode = generateCode();
+        codeDisplay.innerText = generatedCode;
+        submitButton.disabled = true;
+        submitButton.style.background = "grey";
+    }
+
+    // Initialize the captcha
+    initialize();
+
+    // Add event listener to check input as the user types
+    inputField.addEventListener("input", validateInput);
+});

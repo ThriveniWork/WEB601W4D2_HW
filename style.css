@@ -155,7 +155,7 @@ form input[type="radio"] {
 }
 
 form input[type="submit"] {
-   /* background: rgb(81, 203, 98);*/
+    /*background: rgb(81, 203, 98);*/
     color: white;
     padding: 5px; 
     font-size: 1em; 
@@ -163,9 +163,9 @@ form input[type="submit"] {
     cursor: pointer; 
 }
 
-form input[type="submit"]:hover {
+/*form input[type="submit"]:hover {
     background: rgb(66, 174, 80); 
-}
+}*/
 
 body {
     font-family: Arial, sans-serif;
