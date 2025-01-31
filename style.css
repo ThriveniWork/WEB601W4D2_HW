@@ -1,0 +1,318 @@
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+#activity header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: 1500px;
+}
+.main-header {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 700px;
+    margin: 2em auto 0 auto;
+    display: flex; 
+    align-items: center;
+    height: 100px;
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+}
+/* Navigation Section */
+.main-menu {
+    font-weight: 400;
+}
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+.main-menu ul li:hover {
+    background-color: #9ed034;
+}
+.main-menu ul li.active{
+    color: #9ed034;
+    border:none;
+}
+/* Main Content Area */
+main {
+    width: 700px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+main h2 {
+    color: rgb(139, 221, 15);
+}
+table{
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption{
+    background: #852B1B;
+    height: 40px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+thead{
+    background: #BDE1FF;
+}
+tbody{
+    background: #EEFFE6;
+    text-align: center;
+}
+th, td{
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+th:first-child{
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff
+}
+td:first-child{
+    font-weight: bold;
+    background: #BDE1FF;
+}
+main h1 {
+    color: rgb(139, 221, 15);
+}
+/* Added Bold font to Phone*/
+.contactinfo .phone span:first-child,
+.contactinfo .email span:first-child {
+    font-weight: bold;
+}
+form {
+    background: whitw;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+form legend {
+    font-size: 1.5em;
+    color: #5c9600;
+    padding: 5px 20px; 
+}
+
+form fieldset {
+    border: 2px solid #5c9600; 
+    padding: 45px;            
+    border-radius: 5px;      
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="radio"] {
+    width: auto;
+}
+
+form input[type="submit"] {
+   /* background: rgb(81, 203, 98);*/
+    color: white;
+    padding: 5px; 
+    font-size: 1em; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+form input[type="submit"]:hover {
+    background: rgb(66, 174, 80); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: space-between; /* Space images evenly */
+    width: 50%; /* Full width of the container */
+    padding-left: 320px;
+    max-width: 1200px; /* Limit the width of the container */
+  }
+  
+  .image-item {
+    position: relative; /* Set position to relative to position the label above the image */
+    width: 48%; /* Each image takes 48% of the container width */
+    margin-bottom: 50px; /* Space between rows */
+  }
+  
+  .image-name {
+    position: absolute;
+    top: -35px; /* Position name at the top of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the name */
+    color: rgb(245, 242, 242); /* Set the text color to red */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    background-color: rgba(111, 4, 13, 0.924); /* Optional: semi-transparent background for readability */
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .image-container img {
+    width: 100%; /* Make image take full width of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 8, 0.2); /* Optional: Add shadow effect */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  
+/* Partners Section */
+section {
+    width: 100%;
+    background-color: #4288c3;
+}
+section #partners {
+    width: 1200px;
+    padding: 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 155px;
+    background-color: #ecfab8;
+    padding-bottom: 1em;
+    position: relative;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    position: absolute;
+    top: 50%;
+    right: 3em;
+    transform: translateY(-50%);
+}
+footer #nondisclaimer .social .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background-color: #3b5998;
+    color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+    background-color: #55acee;
+    color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+    background-color: #125688;
+    color: white;
+}
+footer #disclaimer {
+    clear: both;
+    text-align: center;
+    padding-top: 1em;
+}
+footer #disclaimer p {
+    font-size: 0.85em;
+}
+/* Center the timer and add a background */
+#timeofday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px; 
+    background-color: #2a8ae3; 
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0px; /* Center the section horizontally */
+    width: 90%; /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#clock {
+    font-weight: bold;
+    margin-left: 1px; 
+}
